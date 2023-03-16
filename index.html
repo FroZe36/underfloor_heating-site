@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="style/advantages.css" />
   <link rel="stylesheet" href="style/calc.css" />
   <link rel="stylesheet" href="style/footer.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -31,15 +36,30 @@
           <p class="hero__description">Устанавливаем теплые полы в&nbsp;квартирах, офисах и&nbsp;загородных домах.</p>
           <a href="#calc" class="button link hero__link">Рассчитать&nbsp;стоимость</a>
         </div>
-        <div class="hero__slider-wrapper">
-          <div class="filling">
-            <div class="filling">
-              <div class="filling hero__image" style="background-image: url(./img/hero_img01.jpg);">
+        <div class="hero__slider-block">
+          <div class="hero__slider swiper">
+            <div class="hero__slider-wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="hero__image" style="background-image: url(./img/hero_img01.jpg);"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__image" style="background-image: url(./img/hero_img02.jpg);"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__image" style="background-image: url(./img/hero_img03.jpg);"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__image" style="background-image: url(./img/hero_img04.jpg);"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__image" style="background-image: url(./img/hero_img05.jpg);"></div>
               </div>
             </div>
 
-            <button class="hero__slider-btn hero__slider-btn_prev"></button>
-            <button class="hero__slider-btn hero__slider-btn_next"></button>
+            <div class="hero__arrow">
+              <button class="hero__slider-btn hero__slider-btn_prev"></button>
+              <button class="hero__slider-btn hero__slider-btn_next"></button>
+            </div>
           </div>
         </div>
       </div>

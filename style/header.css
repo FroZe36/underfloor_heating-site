@@ -18,3 +18,8 @@
   background-color: #ffffff;
   border: 1px solid #e4e4e4;
 }
+@media(max-width: 920px) {
+  .header__logo {
+    width: 124px;
+  }
+}

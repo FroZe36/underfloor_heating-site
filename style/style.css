@@ -1,19 +1,21 @@
 @font-face {
   font-family: Inter;
   font-weight: 500;
+  font-display: swap;
   src: url('../fonts/inter-v12-cyrillic_latin-500.woff2') format('woff2'),
     url('../fonts/inter-v12-cyrillic_latin-500.woff') format('woff');
 }
 @font-face {
   font-family: Inter;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/inter-v12-cyrillic_latin-regular.woff2') format('woff2'),
     url('../fonts/inter-v12-cyrillic_latin-regular.woff') format('woff');
 }
 :root {
   --width-slide: 590px;
-  --width-block: calc(50% - 10px);
   --gap: 10px;
+  --width-block: calc(50% - var(--gap) / 2);
   --padding: 50px;
 }
 html {

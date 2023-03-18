@@ -6,16 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Теплый Пол - Приносим тепло в каждый дом</title>
+
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-500.woff2" as="font" crossorigin />
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-regular.woff2" as="font" crossorigin />
+  
   <link rel="stylesheet" href="style/normalize.css" />
   <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/header.css" />
   <link rel="stylesheet" href="style/hero.css" />
   <link rel="stylesheet" href="style/advantages.css" />
   <link rel="stylesheet" href="style/calc.css" />
   <link rel="stylesheet" href="style/footer.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+  <script src="js/swiper-bundle.min.js"></script>
 
   <script src="js/script.js" defer></script>
 </head>
@@ -65,17 +69,19 @@
       </div>
     </section>
     <section class="advantages section-offset">
-      <div class="container advantages__container">
-        <h2 class="advantages__title title">
-          Наши преимущества
-        </h2>
-        <ul class="advantages__list list-reset">
-          <li class="advantages__item">Надежные материалы</li>
-          <li class="advantages__item">опытные монтажники</li>
-          <li class="advantages__item">Регулируемая температура пола</li>
-          <li class="advantages__item">Защита от замыканий</li>
-          <li class="advantages__item">Гарантия до 10 лет</li>
-        </ul>
+      <div class="container">
+        <div class="advantages__container">
+          <h2 class="advantages__title title">
+            Наши преимущества
+          </h2>
+          <ul class="advantages__list list-reset">
+            <li class="advantages__item">Надежные материалы</li>
+            <li class="advantages__item">опытные монтажники</li>
+            <li class="advantages__item">Регулируемая температура пола</li>
+            <li class="advantages__item">Защита от замыканий</li>
+            <li class="advantages__item">Гарантия до 10 лет</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="calc section-offset" id="calc">
@@ -83,7 +89,7 @@
         <div class="calc__content gray-block">
           <h2 class="calc__title title">Рассчитайте стоимость</h2>
 
-          <form class="calc__form">
+          <form class="calc__form js-calc-form">
             <fieldset class="calc__fieldset calc__fieldset_size">
               <label class="calc__wrapper-input calc__wrapper-input_size">
                 <span class="calc__text">Ширина помещения, м</span>
@@ -122,11 +128,11 @@
           <div class="calc__result-wrapper">
             <p class="calc__result">
               <span class="calc__text">Площадь</span>
-              <span class="calc__result-text">35 кв м</span>
+              <span class="calc__result-text js-square">35 кв м</span>
             </p>
             <p class="calc__result">
               <span class="calc__text">Примерная стоимость</span>
-              <span class="calc__result-text">42590 руб</span>
+              <span class="calc__result-text js-total-price">42590 руб</span>
             </p>
           </div>
         </div>

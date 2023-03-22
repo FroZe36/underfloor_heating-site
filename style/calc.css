@@ -39,6 +39,14 @@
   font-size: 16px;
   line-height: 150%;
   padding: 0px 25px;
+  outline: none;
+}
+.calc__input-number:hover,
+.calc__input-number:focus {
+  border-color: #ffc700;
+}
+.calc__input-number::-webkit-inner-spin-button {
+  display: none;
 }
 .calc__fieldset_tariff {
   margin-bottom: 65px;
@@ -62,6 +70,7 @@
   height: 24px;
   position: relative;
   margin-right: 8px;
+  outline-color: #ffc700;
 }
 .calc__input-radio::before {
   content: '';
@@ -103,6 +112,15 @@
   padding: 24px;
   background: #ffffff;
   border-radius: 8px;
+}
+.calc__result-wrapper_show {
+  display: block;
+}
+.calc__order {
+  display: none;
+}
+.calc__order_show {
+  display: inline-block;
 }
 .calc__result {
   margin-top: 0;

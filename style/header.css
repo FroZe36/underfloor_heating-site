@@ -6,18 +6,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.header__button {
-  background-color: transparent;
-  border: 1px solid #232020;
-}
-.header__button:focus {
-  border: 1px solid #ffc700;
-}
-.header__button:disabled {
-  color: #e0e0e0;
-  background-color: #ffffff;
-  border: 1px solid #e4e4e4;
-}
 @media(max-width: 920px) {
   .header__logo {
     width: 124px;
